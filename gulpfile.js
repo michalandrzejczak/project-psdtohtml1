@@ -41,7 +41,7 @@ gulp.task('build', () =>
 );
 
 gulp.task('watch', () => {
-	gulp.watch('../source/sass/*.scss', ['buildcss']);
+	gulp.watch('../source/sass/**', ['buildcss']);
 	gulp.watch('../source/*.html', ['htmlmin']);
 	gulp.watch('../source/img/*', ['copyImages'])
 });
