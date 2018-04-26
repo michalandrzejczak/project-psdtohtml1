@@ -1,0 +1,32 @@
+/* colors */
+$primary-textcolor: #000000;
+$secondary-textcolor: #252525;
+$tertiary-textcolor: #ffffff;
+$headings-textcolor: #161616;
+$yellow-themecolor: #fba419;
+
+body {
+	color: $primary-textcolor;
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+ 	line-height: 1.6em;
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+a {
+	color: $tertiary-textcolor;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	&:hover {
+		color: rgba($tertiary-textcolor, 0.7);
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
