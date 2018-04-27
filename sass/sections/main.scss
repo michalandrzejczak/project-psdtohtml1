@@ -30,3 +30,84 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+/* headings */
+%h1 {
+	font-weight: 900;
+	font-size: 71px;
+	letter-spacing: -0.6px;
+	line-height: 1.1em;
+}
+%h2 {
+	font-size: 57px;
+	font-weight: 900;
+	letter-spacing: -0.47px;
+	line-height: 1.1em;
+}
+
+.h1-dark {
+	@extend %h1;
+	color: $headings-textcolor;
+}
+.h1-white {
+	@extend %h1;
+	color: $tertiary-textcolor;
+}
+.h2-yellow {
+	@extend %h2;
+	color: $yellow-themecolor;
+}
+
+/* buttons */
+.btn-primary {
+	color: $tertiary-textcolor;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.32px;
+	width: 182px;
+	height: 51px;
+	background-color: $yellow-themecolor;
+	border: none;
+	border-radius: 30px;
+	&:hover{
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	&:focus {
+		border: none;
+		outline: 0;
+	}
+	&::-moz-focus-inner {
+		border: 0;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-secondary {
+	color: $tertiary-textcolor;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.32px;
+	width: 127px;
+	height: 36px;
+	background-color: $yellow-themecolor;
+	border: none;
+	border-radius: 25px;
+	&:hover{
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	&:focus {
+		border: none;
+		outline: 0;
+	}
+	&::-moz-focus-inner {
+		border: 0;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}

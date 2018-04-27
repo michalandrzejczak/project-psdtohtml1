@@ -82,26 +82,3 @@
 		}
 	}
 }
-/* btn-primary */
-.btn-primary {
-	color: $tertiary-textcolor;
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.32px;
-	width: 182px;
-	height: 51px;
-	background-color: $yellow-themecolor;
-	border: none;
-	border-radius: 30px;
-	&:hover{
-		opacity: 0.8;
-		cursor: pointer;
-	}
-	&:focus {
-		outline: 0;
-	}
-	&:active {
-		transform: scale(0.95);
-	}
-}
