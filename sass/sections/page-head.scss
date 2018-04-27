@@ -1,9 +1,10 @@
 #page-head {
+	position: relative;
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
 	height: 872px;
-	background-color: #000;
+	background-color: #000000;
 	background-image: url("img/bg-head-photo.png");
 	background-repeat: no-repeat;
 	
@@ -13,6 +14,11 @@
 		font-weight: 900;
 		letter-spacing: -0.5px;
 		padding-left: 109px;
+		a {
+			&:hover {
+				color: $tertiary-textcolor;
+			}
+		}
 		img {
 			width: 54px;
 			height: 41px;
@@ -45,8 +51,57 @@
 			&.facebook-icon {
 				margin-right: 100px;
 			}
-			
 		}
 	}
-	
+	.head_container {
+		position: absolute;
+		left: 220px;
+		top: 290px;
+		width: 550px;
+		height: 367px;
+		.head_title {
+			color: $tertiary-textcolor;
+			font-size: 64px;
+			font-weight: 900;
+			line-height: 1.1em;
+			letter-spacing: -0.69px;
+		}
+		.head_title-yellow {
+			color: $yellow-themecolor;
+		}
+		.head_para {
+			color: $tertiary-textcolor;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 1.4em;
+			letter-spacing: 0.6px;
+			padding: 25px 0;
+		}
+		.btn_container {
+			padding: 40px 0;
+		}
+	}
+}
+/* btn-primary */
+.btn-primary {
+	color: $tertiary-textcolor;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.32px;
+	width: 182px;
+	height: 51px;
+	background-color: $yellow-themecolor;
+	border: none;
+	border-radius: 30px;
+	&:hover{
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
 }
