@@ -1,0 +1,69 @@
+#page-team {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+	min-height: 822px;
+	background-color: #000000;
+	background-image: url("img/bg-team-photo.png");
+	background-position: -200px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	
+	.team_heading {
+		padding: 30px 20px;
+	}
+	
+	.team_para {
+		max-width: 1080px;
+		color: $tertiary-textcolor;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.6em;
+		letter-spacing: 0.45px;
+		display: inline-block;
+		margin: 0 20px;
+	}
+	
+	.team_gallery {
+		display: inline-block;
+		
+		padding: 70px 10px 0 10px;
+	}
+	
+	.team_photo {
+		display: inline-block;
+		overflow: hidden;
+		width: 280px;
+		height: 317px;
+		margin: 10px 10px;
+		img {
+			transition: all 0.5s;
+			&:hover {
+				transition: all 0.5s;
+				transform: scale(1.1);
+			}
+		}
+		.team_name-tooltip {
+			display: none;
+			z-index: 1;
+			width: 140px;
+			color: $tertiary-textcolor;
+			text-align: center;
+			font-size: 16px;
+			line-height: 1.5em;
+			padding: 10px 5px;
+			margin: 10px 0;
+			background-color: rgba(#000, 0.7);
+			border-radius: 5px; 
+			position: absolute;
+			transform: translate(70px, -70px);
+		}
+		&:hover .team_name-tooltip {
+			display: block;
+		}
+	}
+}

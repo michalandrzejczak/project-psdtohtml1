@@ -38,6 +38,7 @@ img {
 	font-size: 71px;
 	letter-spacing: -0.6px;
 	line-height: 1.1em;
+	display: inline;
 }
 %h2 {
 	font-size: 57px;
@@ -53,6 +54,10 @@ img {
 .h1-white {
 	@extend %h1;
 	color: $tertiary-textcolor;
+}
+.h1-yellow {
+	@extend %h1;
+	color: $yellow-themecolor;
 }
 .h2-yellow {
 	@extend %h2;
