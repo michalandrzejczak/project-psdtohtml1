@@ -84,6 +84,8 @@ img {
 	}
 	&:active {
 		transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
 	}
 }
 .btn-secondary {
@@ -110,5 +112,7 @@ img {
 	}
 	&:active {
 		transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
 	}
 }

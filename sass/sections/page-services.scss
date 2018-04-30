@@ -26,7 +26,11 @@
 		display: inline-block;
 		&:hover {
 			transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
 			transform: rotate(5deg) scale(1.05);
+			-webkit-transform: rotate(5deg) scale(1.05);
+			-moz-transform: rotate(5deg) scale(1.05);
 		}
 	}
 	
