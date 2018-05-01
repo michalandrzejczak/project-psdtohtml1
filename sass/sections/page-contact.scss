@@ -59,11 +59,13 @@
 	}
 	
 	.contact_container-right {
+		width: 50%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		text-align: left; 
-		margin-left: 80px;
+		padding-left: 80px;
+		box-sizing: border-box;
 	}
 	
 	.contact_para-right {
