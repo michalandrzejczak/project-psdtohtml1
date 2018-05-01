@@ -1,0 +1,77 @@
+#page-casestudies {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+	min-height: 820px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	.casestudies_heading {
+		padding: 30px 10px;
+	}
+	
+	.casestudies_para {
+		padding: 20px 10px;
+		max-width: 750px;
+		color: #3e3e3e;
+		letter-spacing: 0.45px;
+		line-height: 1.4em;
+	}
+	
+	.casestudies_gallery {
+		display: inline-flex;
+		margin: 42px 0;
+		overflow: hidden;
+	}
+	
+	.casestudies_photo {
+		height: 378px;
+		.casestudies_photo-overlay {
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			top: -250px;
+			.photo_heading {
+				color: $yellow2-themecolor;
+				font-size: 16px;
+				font-weight: 700;
+				letter-spacing: 0.42px;
+				line-height: 1.6em;
+				text-transform: uppercase;
+				padding-bottom: 18px;
+			}
+			.photo_para {
+				max-width: 290px;
+				color: $tertiary-textcolor;
+				font-size: 16px;
+				font-weight: 300;
+				letter-spacing: 0.4px;
+				line-height: 1.5em;
+				padding-bottom: 36px;
+			}
+		} /* end of .casestudies_photo-overlay */
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		&:hover {
+			img {
+				transition: all 0.5s ease;
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				filter: brightness(20%);
+				-webkit-filter: brightness(20%);
+				-moz-filter: brightness(20%);
+			}
+			.casestudies_photo-overlay {
+				display: flex;
+			}
+		} /* end of &:hover */
+	} /* end of .casestudies_photo */
+}
